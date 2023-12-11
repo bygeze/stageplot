@@ -1,0 +1,47 @@
+/* src/components/stage/ElementsBar.css */
+.elements-bar {
+    background-color: #111; /* Fondo gris oscuro */
+    height: 50px; /* Altura de la barra */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    display: flex;
+    color: #fff
+  }
+
+/* first category item margin */
+.category-dropdown:first-of-type {
+  margin-left: 20px;
+}
+  
+  .category-dropdown {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 50px;
+    cursor: pointer;
+  }
+  
+  .category-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Fondo gris más claro */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    line-height: 16px;
+  }
+  
+  .category-dropdown:hover .category-dropdown-content {
+    display: block;
+  }
+  
+  .category-dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Cambia el fondo al pasar el ratón */
+  .category-dropdown-content a:hover {
+    background-color: #555; 
+  }
+  
