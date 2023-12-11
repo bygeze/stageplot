@@ -1,0 +1,8 @@
+/* src/components/stage/elements/Elements.css */
+.common-canvas-element {
+    cursor: move;
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}

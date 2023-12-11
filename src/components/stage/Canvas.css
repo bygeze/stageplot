@@ -1,0 +1,9 @@
+/* src/components/stage/Canvas.css */
+.canvas {
+    position: absolute;
+    top: 50px; /* Altura de la barra fijada arriba */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;   
+  }
