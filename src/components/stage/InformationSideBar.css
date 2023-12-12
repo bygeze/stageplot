@@ -1,0 +1,7 @@
+.information-side-bar {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: calc(100vh - 50px);
+    flex-basis: auto;
+    border-left: 2px solid rgb(223, 223, 223);
+}

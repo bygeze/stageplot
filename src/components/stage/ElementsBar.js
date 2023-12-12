@@ -19,10 +19,14 @@ const ElementsBar = ({ addElementToCanvas }) => {
       elements: ['KRK_Rokit_5', 'OtherSpeaker1', 'OtherSpeaker2'],
     },
     {
-        name: 'EQs',
-        elements: ['DBX_231', 'OtherSpeaker1', 'OtherSpeaker2'],
-      },
-    // Agrega más categorías según sea necesario
+      name: 'EQs',
+      elements: ['DBX_231', 'OtherSpeaker1', 'OtherSpeaker2'],
+    },
+    {
+      name: 'Keyboards',
+      elements: ['Clavia_Nord_Stage_4_88', 'OtherSpeaker1', 'OtherSpeaker2'],
+    },
+
   ];
 
   const handleCategoryClick = (category) => {

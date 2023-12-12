@@ -6,3 +6,15 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.common-canvas-element:hover {
+    border: 1px solid black;
+}
+
+.common-canvas-element p {
+    visibility: hidden;
+}
+
+.selected {
+    border: 1px solid rgb(55, 0, 255);
+}

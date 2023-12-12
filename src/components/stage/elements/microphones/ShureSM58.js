@@ -2,10 +2,11 @@
 import React from 'react';
 import './ShureSM58.css'; // Añade estilos según sea necesario
 
-const ShureSM58 = ({ id, position }) => {
+const ShureSM58 = ({ id, position, className }) => {
+  const combClass = "shure-sm58 common-canvas-element " + className;
   return (
     <div
-      className="shure-sm58 common-canvas-element"
+      className={combClass}
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
