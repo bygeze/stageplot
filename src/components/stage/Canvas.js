@@ -6,10 +6,11 @@
   import './Canvas.css'; // Importa el archivo de estilos
   import './elements/Elements.css'
 
-  const Canvas = ({ selectedId, elements, onElementMove, onElementClick }) => {
+  const Canvas = ({ selectedId, elements, onElementMove, onElementClick, selectedTool }) => {
     var offsetTemp = {x: 0, y: 0};
 
     const handleDragStart = (e, id) => {
+      onElementClick(id);   
       const { clientX, clientY } = e;
 
       const elementRect = e.target.firstChild.firstChild.getBoundingClientRect();
@@ -38,8 +39,8 @@
       console.log(offsetTemp);
 
       const dropPlace =  { 
-        x: clientX - offsetTemp.x, 
-        y: clientY - offsetTemp.y - 50 - 17,
+        x: clientX - offsetTemp.x - 1, 
+        y: clientY - offsetTemp.y - 17,
       };
 
       // Obtener la posición relativa del ratón dentro del elemento movido
@@ -82,7 +83,8 @@
                   key={element.id} 
                   id={element.id} 
                   position={element.position}
-                  className={sel} />
+                  className={sel}
+                  style={{transform: "scale("+element.scale+")"}} />
             </div>
           ) : null;
         })}
