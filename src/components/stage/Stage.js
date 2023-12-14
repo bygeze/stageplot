@@ -49,7 +49,7 @@ const Stage = () => {
       <div
       style={{display: 'flex'}}>
         <Canvas selectedId={selectedElementId} elements={stageElements} onElementMove={handleElementMove} onElementClick={handleElementClick} />
-        <InformationSideBar selectedId={selectedElementId}></InformationSideBar>
+        <InformationSideBar elements={stageElements} selectedId={selectedElementId}></InformationSideBar>
       </div>
 
     </div>

@@ -1,0 +1,42 @@
+
+.isde-modal-cont {
+    margin: 10px;
+}
+
+.isde-modal-title {
+    background-color: rgb(211, 211, 211);
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.isde-modal-downbutton {    
+    float: right;
+    cursor: pointer;
+    transition: transform 600ms;
+
+}
+
+.isde-modal-downbutton-rotate {
+    transform: rotate(180deg);
+
+}
+
+.isde-modal-content.show {
+    grid-template-rows: 1fr;
+}
+
+.isde-modal-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 600ms;
+}
+
+.isde-modal-content > div{
+    overflow: hidden;
+}
+
+.isde-modal-content-style {
+    padding: 1px 10px 1px 10px;
+    background-color: rgb(245,245,245);
+}
