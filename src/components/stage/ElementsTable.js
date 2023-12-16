@@ -7,6 +7,7 @@ const ElementsTable = ({ elements }) => {
         <tr>
           <th>ID</th>
           <th>Type</th>
+          <th>Scale</th>
         </tr>
       </thead>
       <tbody>
@@ -14,6 +15,7 @@ const ElementsTable = ({ elements }) => {
           <tr key={element.id}>
             <td>{element.id}</td>
             <td>{element.type}</td>
+            <td>{parseFloat(element.scale).toFixed(1)}</td>
           </tr>
         ))}
       </tbody>
