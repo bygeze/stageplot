@@ -3,6 +3,7 @@
   import ShureSM58 from './elements/microphones/ShureSM58';
   import DBX_231 from './elements/eqs/DBX_231';
   import Clavia_Nord_Stage_4_88 from './elements/keyboards/Clavia_Nord_Stage_4_88';
+  import YamahaDM7 from './elements/mixers/yamaha-dm7/YamahaDM7';
   import './Canvas.css'; // Importa el archivo de estilos
   import './elements/Elements.css'
 
@@ -54,7 +55,8 @@
     const componentMap = {
       ShureSM58,
       DBX_231,
-      Clavia_Nord_Stage_4_88
+      Clavia_Nord_Stage_4_88,
+      YamahaDM7
       // Otros tipos de elementos según sea necesario
     };
 

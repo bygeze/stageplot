@@ -1,0 +1,6 @@
+/* src/components/stage/elements/microphones/ShureSM58.css */
+.yamaha-dm7{
+    width: 300px;
+    height: 200px;
+    background-image: url("./img/yamaha-dm7.jpeg");
+}

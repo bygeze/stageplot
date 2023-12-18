@@ -26,6 +26,10 @@ const ElementsBar = ({ addElementToCanvas }) => {
       name: 'Keyboards',
       elements: ['Clavia_Nord_Stage_4_88', 'OtherSpeaker1', 'OtherSpeaker2'],
     },
+    {
+      name: 'Mixers',
+      elements: ['YamahaDM7', 'OtherSpeaker1', 'OtherSpeaker2'],
+    },
 
   ];
 
